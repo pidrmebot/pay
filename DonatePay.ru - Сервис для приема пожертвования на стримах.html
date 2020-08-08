@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Пожертвования на стримах, Как зарабатывать на стримах, Донат, пожертвования, Stream, Twitch, Виджет последних пожертвований, Заработок на стримах, donationAlerts"/>
+  <meta name="description" content="Сервис для приема пожертвования на стримах">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade">
+  <meta property="og:image" content="/images/donatepay_logo.png"/>
+  <meta name="webmoney.attestation.label" content="webmoney attestation label#2888FC75-E8D3-4AA2-BA26-8D54C3B43A8F">
+  <meta name="yandex-verification" content="b2a5290aaeef4254">
+  
+  <title>
+          DonatePay.ru - Сервис для приема пожертвования на стримах
+      </title>
+
+  <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="apple-touch-icon icon" sizes="57x57 60x60 72x72 76x76 114x114 120x120 144x144 152x152 180x180"
+        type="image/png" href="/images/apple-touch.png"/>
+  <link rel="android-touch-icon icon" sizes="16x16 32x32 96x96 192x192" type="image/png"
+        href="/images/android-touch.png"/>
+
+  <link rel='stylesheet' type='text/css' href='https://donatepay.ru/assets/css/fontawesome-all.min.css?v=1524562226'>
+  <link rel="stylesheet" type="text/css" href="/vendor/widgets/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="/vendor/plugins/pace/pace_eee.css">
+  <link rel="stylesheet" type="text/css" href="/vendor/plugins/ladda/ladda.min.css">
+
+  
+  <link rel='stylesheet' type='text/css' href='https://donatepay.ru/assets/skin/default_skin/css/theme.css?v=1584612441'>
+  <link rel='stylesheet' type='text/css' href='https://donatepay.ru/assets/build/css/site.css?v=1596615533'>
+
+  
+    <meta name="apple-itunes-app" content="app-id=1349785852">
+    <meta name="google-play-app" content="app-id=ru.donatepay.donatepay">
+    <link rel="stylesheet" href="/assets/build/css/root/smartAppBanner.css?id=c4cebf237c6d94495b2e"/>
+
+  <link rel="stylesheet" href="/assets/build/css/root/landing.css?id=a1086a6c2ee84b708350"/>
+  <style>
+    .usage-users span {
+      color: #fff;
+    }
+
+    .usage-users span {
+      color: #ffc107;
+    }
+
+    .imagesSection {
+      border-radius: 20px;
+      border: 2px solid #282929;
+      overflow: hidden;
+      height: 215px;
+      line-height: 215px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-fixed-top navbar-default m-b-0 ">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+              <a class="navbar-brand" href="/" style="display:block;font-size: 22px;line-height: 22px;font-weight: bold;">
+          <img src="/images/logo.png" class="logo" style="position: relative;top: -2px;">
+          <span style="color: #fff;">Donate</span><span style="color:#4caf50;">Pay</span>
+        </a>
+          </div>
+    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+              <ul class="nav navbar-nav" style="margin-left: 0;float:left;">
+          <li class="">
+            <a href="https://donatepay.ru/about">
+              О Сервисе
+            </a>
+          </li>
+          <li class="">
+            <a href="https://donatepay.ru/faq">
+              Помощь
+            </a>
+          </li>
+          <li class="hidden-xs">
+            <a href="#" onclick="return false;" data-toggle="modal" data-target="#contactsModal">
+              Контакты
+            </a>
+          </li>
+          <li class="">
+            <a href="https://donatepay.ru/obs">OBS</a>
+          </li>
+        </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+                  <li>
+            <a href="" onclick="return false;" data-toggle="modal" data-target="#authModal">
+              <i class="fa fa-sign-in"></i> Войти
+            </a>
+          </li>
+              </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="width: 100%; height: 61px;"></div>
+
+  <section class="content ng-scope pn">
+    <div style="background: #282929 url('/images/peoplesbg.png') no-repeat center">
+      <div class="container" style="height: 532px;">
+        <div class="row" style="margin-top: 100px;">
+          <div class="col-md-offset-2 col-md-8 text-center">
+            <h1 class="headline" style="font-size:35px;color:#fff;">
+              Представляем <span style='color:#4caf50;'>DonatePay</span>
+            </h1>
+            <h4 class="headline" style="font-size:15px;line-height:25px;">
+              Совершенно новая система, позволяющая принимать донат.<br>Моментальные сообщения на экране стрим-трансляции.<br><br>Попробуйте и Вы поймете насколько это удобно.
+            </h4><br>
+            <p>
+                              <a class="btn btn-lg btn-yell" href="#" onclick="ym(40925679, 'reachGoal', '_button-entry'); return false;" data-toggle="modal"
+                   data-target="#authModal">
+                  Присоединиться
+                </a>
+                          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pn" style="position: relative;top: -75px;">
+      <div class="top-channels--title">Топовые стримеры работают с нами</div>
+      <div class='top-channels'>
+                  <div>
+            <div class="col-xs-12">
+              <div class="col-xs-6">
+                <div class="channel-image" style="background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/ddea90c7-87af-49f2-b8a6-6b2d5ef6c0e3-profile_image-300x300.png);"></div>
+              </div>
+              <div class="col-xs-6">
+                <div style="">
+                  <div class="channel-title"><a href="https://www.twitch.tv/dendi" target="_blank">Dendi</a></div>
+                  <div class="channel-info">725 637</div>
+                  <div class="channel-info">Подписчики</div>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div>
+            <div class="col-xs-12">
+              <div class="col-xs-6">
+                <div class="channel-image" style="background-image: url(https://yt3.ggpht.com/a/AATXAJxiQ0Nj0IN-krICAIOx5oN8aq_oAMHkvuLRU1JeBw=s240-c-k-c0xffffffff-no-rj-mo);"></div>
+              </div>
+              <div class="col-xs-6">
+                <div style="">
+                  <div class="channel-title"><a href="https://www.youtube.com/channel/UCbSdb-pzDPdhmjb7iY2hySQ" target="_blank">DESERTOD</a></div>
+                  <div class="channel-info">645 000</div>
+                  <div class="channel-info">Подписчики</div>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div>
+            <div class="col-xs-12">
+              <div class="col-xs-6">
+                <div class="channel-image" style="background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/a1taoda-profile_image-6f6d48127dd91d6e-300x300.jpeg);"></div>
+              </div>
+              <div class="col-xs-6">
+                <div style="">
+                  <div class="channel-title"><a href="https://www.twitch.tv/a1taoda" target="_blank">A1taOda</a></div>
+                  <div class="channel-info">536 670</div>
+                  <div class="channel-info">Подписчики</div>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div>
+            <div class="col-xs-12">
+              <div class="col-xs-6">
+                <div class="channel-image" style="background-image: url(https://yt3.ggpht.com/a/AATXAJwiofNtlihpGUQht_sC3e-DVgV99fsrKF6TMFOpDg=s240-c-k-c0xffffffff-no-rj-mo);"></div>
+              </div>
+              <div class="col-xs-6">
+                <div style="">
+                  <div class="channel-title"><a href="https://www.youtube.com/channel/UCVPEcfXMNFkE20mkXxWoAaw" target="_blank">Sledovatel GameShow</a></div>
+                  <div class="channel-info">463 000</div>
+                  <div class="channel-info">Подписчики</div>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div>
+            <div class="col-xs-12">
+              <div class="col-xs-6">
+                <div class="channel-image" style="background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/godhunt-profile_image-edf107addd3d4dbc-300x300.jpeg);"></div>
+              </div>
+              <div class="col-xs-6">
+                <div style="">
+                  <div class="channel-title"><a href="https://www.twitch.tv/godhunt" target="_blank">GodHunt</a></div>
+                  <div class="channel-info">201 119</div>
+                  <div class="channel-info">Подписчики</div>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div>
+            <div class="col-xs-12">
+              <div class="col-xs-6">
+                <div class="channel-image" style="background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/da0022c8-74b9-4938-a296-c3f804671d57-profile_image-300x300.png);"></div>
+              </div>
+              <div class="col-xs-6">
+                <div style="">
+                  <div class="channel-title"><a href="https://www.twitch.tv/jsing" target="_blank">JSing</a></div>
+                  <div class="channel-info">8 694</div>
+                  <div class="channel-info">Подписчики</div>
+                </div>
+              </div>
+            </div>
+          </div>
+              </div>
+    </div>
+  </section>
+
+  <section class="content ng-scope pn">
+    <div class="container pn imagesSection">
+      <div class="col-xs-6 col-sm-3 socvk"><img src="/images/cube_donate_ru.png"></div>
+      <div class="col-xs-6 col-sm-3 socst"><img src="/images/cube_skin_ru.png"></div>
+      <div class="col-xs-6 col-sm-3 socfb"><img src="/images/cube_music_ru.png"></div>
+      <div class="col-xs-6 col-sm-3 soctwitch"><img src="/images/cube_partner_ru.png"></div>
+    </div>
+  </section>
+
+  <section class="content ng-scope pn" style="background-image:url('/images/sitebg.png'); background-position: center;">
+    <div class="container">
+      <div style="position:relative;height:0;padding-bottom:56.25%">
+        <iframe src="https://www.youtube.com/embed/eBi5WwJiGw8?ecver=2&rel=0"
+                width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="ng-scope" style="background-image:url('/images/landing_line.png');padding: 40px 0;margin: 80px 0;">
+    <div class="container">
+      <div class="col-xs-6">
+        <span class="usage-users">
+          <span>568912 человек</span> уже начали пользоваться <span>нашей системой.</span>
+        </span><br>
+        <span>Напишите нам и мы расскажем вам обо всех преимуществах использования DonatePay!</span>
+      </div>
+      <div class="col-xs-6 text-right">
+                  <a class="btn btn-lg btn-yell" href="#" onclick="ym(40925679, 'reachGoal', '_button-join-main'); return false;" data-toggle="modal" data-target="#authModal">
+            Присоединиться
+          </a>
+              </div>
+    </div>
+  </section>
+
+  <section class="content ng-scope p0 pb50">
+    <div class="container">
+                      <div class="col-xs-6 col-sm-3">
+          <h3 class="col-xs-12" style="height: 40px;overflow: hidden;">
+            <a target="_blank" href="https://vk.com/wall-132834057_10432">Оповещения о спонсорах канала на Youtube!</a>
+          </h3>
+          <h4 class="col-xs-12">06.08.2020 16:12:46</h4>
+                      <div class="col-xs-12 mv10" style="height: 150px;overflow: hidden;text-overflow: ellipsis;">
+              Если вы захотите изменить текст или изображение нового оповещения, зайдите в настройки виджета "События на стриме" - donatepay.ru/donation/alerts/followers<br><br>В виджете последних событий, так же после перезахода в аккаунт, появится новое событие о оповещении спонсорства на Youtube.          </div>
+        </div>
+                      <div class="col-xs-6 col-sm-3">
+          <h3 class="col-xs-12" style="height: 40px;overflow: hidden;">
+            <a target="_blank" href="https://vk.com/wall-132834057_10392">Отключение виджета последних транзакций!</a>
+          </h3>
+          <h4 class="col-xs-12">22.07.2020 17:44:13</h4>
+                      <div class="col-xs-12 mv10" style="height: 150px;overflow: hidden;text-overflow: ellipsis;">
+              Виджет последних событий - https://donatepay.ru/dashboard/last-events          </div>
+        </div>
+                      <div class="col-xs-6 col-sm-3">
+          <h3 class="col-xs-12" style="height: 40px;overflow: hidden;">
+            <a target="_blank" href="https://vk.com/wall-132834057_10367">Сервера у многих сервисов мира легли!</a>
+          </h3>
+          <h4 class="col-xs-12">18.07.2020 00:31:39</h4>
+                      <div class="col-xs-12 mv10" style="height: 150px;overflow: hidden;text-overflow: ellipsis;">
+              Какой-то глобальный сбой в мировом интернете, у америки сервера полегли, даже сайты типа https://www.cloudflare.com/ не работают          </div>
+        </div>
+                      <div class="col-xs-6 col-sm-3">
+          <h3 class="col-xs-12" style="height: 40px;overflow: hidden;">
+            <a target="_blank" href="https://vk.com/wall-132834057_10356">Обновление приложения на iOS !</a>
+          </h3>
+          <h4 class="col-xs-12">16.07.2020 13:12:22</h4>
+                      <div class="col-xs-12 mv10" style="height: 150px;overflow: hidden;text-overflow: ellipsis;">
+              Вышло обновление приложения для iOS, его уже можно скачать в AppStore!<br>В новой версии можно:<br>- стримить на Youtube, пока что в режиме beta-тестирования<br>- запускать трансляции через другие rtmp-площадки<br>Так же исправили некоторые ошибки.<br>https://apps.apple.com/ru/app/donatepay/id1349785852          </div>
+        </div>
+                    <h3 class="col-xs-12 text-right pt20">
+        <a target="_blank" href="https://vk.com/donatepay">
+          Остальные новости читайте в нашей группе VK...
+        </a>
+      </h3>
+    </div>
+  </section>
+
+  <section class="content ng-scope p0 pb50">
+    <div class="container">
+      <div class="col-xs-12 col-sm-4 text-center footer-columns">
+        <div><img src="/images/footer/info.svg" alt=""></div>
+        <div>О Сервисе</div>
+        <div>
+          <a href="https://donatepay.ru/about" target="_blank">
+            Подробнее о DonatePay
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 text-center footer-columns">
+        <div><img src="/images/footer/24-hours.svg" alt=""></div>
+        <div>Связаться с нами</div>
+        <div>
+          <a href="https://vk.com/donatepay" target="_blank" class="fa fa-vk"></a>
+          <a href="https://showstreams.tv/video-channels/donatepay/videos" title="Видео Хостинг"
+             target="_blank"><svg clip-rule="evenodd" fill-rule="evenodd" height="125" image-rendering="optimizeQuality"
+     shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 117 125" width="117"
+     xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" stroke="#f56b08" stroke-width="6">
+        <circle cx="58" cy="62" r="32"/>
+        <path d="m26 104c-2-1-3-2-5-4-10-9-16-23-16-38 0-29 24-53 53-53 3 0 5 0 7 1h2" stroke-linecap="round"/>
+        <path d="m93 22c12 10 19 24 19 40 0 30-24 54-54 54-5 0-10-1-14-3" stroke-linecap="round"/>
+    </g>
+    <path d="m68 2 13 12-17 5z" fill="#f56b08"/>
+    <path d="m51 49 18 12-18 12z" fill="#f56b08"/>
+    <path d="m49 123-12-12 17-5z" fill="#f56b08"/>
+</svg>
+</a>
+          <a href="https://t.me/joinchat/AAAAAEeBuwUPLw9B_KTr4g" target="_blank" class="fa fa-telegram"></a>
+          <a href="https://www.facebook.com/donatepay/" target="_blank" class="fa fa-facebook"></a>
+          <a href="https://www.youtube.com/c/donatepay?sub_confirmation=1" target="_blank" class="YouTube-icon">
+            <svg height="512pt" viewBox="0 -77 512.00213 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+    <path d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
+          fill="#f00"/>
+    <path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" fill="#fff"/>
+</svg>
+          </a>
+          <a href="/cdn-cgi/l/email-protection#0e7d7b7e7e617c7a4e6a61606f7a6b7e6f77207c7b" class="fa fa-envelope"></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 text-center footer-columns">
+        <div><img src="/images/footer/customer-service.svg" alt=""></div>
+        <div>FAQ</div>
+        <div>
+          <a href="https://donatepay.ru/faq" target="_blank">
+            Ответы на вопросы
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-12 text-center footer-banners pb20">
+        <a href="https://itunes.apple.com/ru/app/donatepay/id1349785852" target="_blank">
+          <img src="/images/footer/appStore_ru.png" alt="Apple Store" title="Apple Store">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=ru.donatepay.donatepay" target="_blank">
+          <img src="/images/footer/googlePlay_ru.png" alt="Google Play" title="Google Play">
+        </a>
+      </div>
+      <div class="col-sm-12 text-center footer-banners pb20">
+        <a href="http://www.webmoney.ru/" target="_blank">
+          <img src="/images/footer/wm_ru.png" alt="webMoney.ru" title="webMoney.ru">
+        </a>
+        <a href="http://passport.webmoney.ru/asp/CertView.asp?wmid=412206845710" target="_blank">
+          <img src="/images/footer/wm_a_ru.png"
+               alt="Аттестат нашего WM идентификатора 412206845710"
+               title="Аттестат нашего WM идентификатора 412206845710">
+        </a>
+      </div>
+    </div>
+  </section>
+
+<div style="width: 100%; height: 44px;"></div>
+<footer id="content-footer" class="affix" style="z-index: 16;margin-left:0;background: #2a2a2a;">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <span class="footer-legal">
+                © DonatePay.ru Все права защищены
+                                    
+
+                    | <a href="https://donatepay.ru/page/company">О компании</a>
+                                | <a href="https://donatepay.ru/terms">Соглашения</a>
+                                    | <a href="https://donatepay.ru/page/privacy">Политика конфеденциальности</a>
+            </span>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="contactsModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">
+                    Связь
+                </h4>
+            </div>
+            <div class="modal-body">
+                Вся поддержка осуществляется через почту <a href="/cdn-cgi/l/email-protection#fb888e8b8b94898fbb9f94959a8f9e8b9a82d5898e"><span class="__cf_email__" data-cfemail="95e6e0e5e5fae7e1d5f1fafbf4e1f0e5f4ecbbe7e0">[email&#160;protected]</span></a> или<a href="https://vk.com/donatepay" target="_blank">группу Вконтакте</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-yell" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal fade" id="authModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                    <h4 class="modal-title">Присоединиться</h4>
+                </div>
+                <div class="modal-body">
+                                            <div class="btn-group mb10" onclick="ym(40925679, 'reachGoal', '_button-twitch-login')">
+                            <a href="https://donatepay.ru/auth/twitch" class="btn btn-foilet dark">
+                                <i class="fa fa-twitch"></i> Twitch
+                            </a>
+                        </div>
+                    
+                                            <div class="btn-group mb10" onclick="ym(40925679, 'reachGoal', '_button-steam-login')">
+                            <a href="https://donatepay.ru/auth/steam" class="btn btn-dark dark">
+                                <i class="fa fa-steam"></i> Steam
+                            </a>
+                        </div>
+                    
+                                            <div class="btn-group mb10" onclick="ym(40925679, 'reachGoal', '_button-youtube-login')">
+                            <a href="https://donatepay.ru/auth/youtube" class="btn auth-button__youTube"></a>
+                        </div>
+                    
+                                            <div class="btn-group mb10" onclick="ym(40925679, 'reachGoal', '_button-vk-login')">
+                            <a href="https://donatepay.ru/auth/vkontakte" class="btn btn-primary">
+                                <i class="fa fa-vk"></i> VK
+                            </a>
+                        </div>
+                                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-yell" data-dismiss="modal">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Yandex.Metrika counter -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+      ym(40925679, "init", {
+          clickmap: true,
+          trackLinks: true,
+        webvisor: true,
+        accurateTrackBounce: true
+      });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/40925679" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151661959-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-151661959-1');
+  </script>
+
+<script src="/assets/build/js/root/index.js?id=e1a997278c00db18c4ee"></script>
+<script src="/vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+<script src="/assets/js/utility/utility.js"></script>
+<script src="/vendor/plugins/pnotify/pnotify.js"></script>
+<script type="text/javascript">
+    /**
+     * @param  style - type of alert ( success , danger , warning )
+     * @param  value - alert message
+     */
+    function sendNotify(style, value) {
+        new PNotify({
+            text:     value,
+            addclass: 'stack_top_right',
+            type:     style,
+            stack:    {
+                'dir1':     'down',
+                'dir2':     'left',
+                'push':     'top',
+                'spacing1': 10,
+                'spacing2': 10
+            },
+            width:    '375px',
+            delay:    3400
+        });
+    }
+
+    function sendUPS() {
+        sendNotify('danger', 'Упс что-то пошло не так! :(');
+    }
+</script>
+
+<script type="text/javascript">
+    let hideMoneyTooltip = {
+        'animation': true,
+        'placement': 'auto',
+        'container': 'body',
+        'html':      true,
+        'title':     'У вас включен режим "Не Спалился". Для его отключения нажмите на значек <span class="fa fa-eye-slash fs18"></span>.'
+    };
+    $('.hideMoney').tooltip(hideMoneyTooltip);
+</script>
+
+
+  <script src="/assets/build/js/root/smartAppBanner.js?id=f1e4f626f1d8b7e6cef5" defer></script>
+
+  <script src="/assets/build/js/root/landing.js?id=2a7fb52484cd8fdf9760" defer></script>
+
+
+</body>
+
+</html>
