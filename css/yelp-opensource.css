@@ -3,20 +3,6 @@ p {
   text-overflow: ellipsis;
 }
 
-h3 a {
-
-
-  /* Some project names are too long :( */
-  overflow: hidden;
-  display: inline-block;
-  width: 200px;
-  text-overflow: ellipsis;
-}
-
-h3 a i {
-  color: #000;
-  font-size: 14px;
-}
 
 .top-shelf .container {
   padding: 0;
